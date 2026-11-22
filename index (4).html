@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Social y familias con cáncer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d889a0;
+            color: white;
+        }
+
+        header {
+            min-height: 100vh;
+            background: linear-gradient(rgba(120,45,70,0.45), rgba(120,45,70,0.45)),
+            url("https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600");
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 7%;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .logo {
+            font-size: 18px;
+            letter-spacing: 4px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .portada {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .portada h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(38px, 6vw, 75px);
+            font-weight: normal;
+            max-width: 950px;
+            line-height: 1.2;
+            margin: 30px 0;
+        }
+
+        .portada p {
+            letter-spacing: 4px;
+            font-size: 12px;
+        }
+
+        .boton {
+            color: white;
+            border: 1px solid white;
+            padding: 16px 35px;
+            text-decoration: none;
+            margin-top: 30px;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .boton:hover {
+            background: white;
+            color: #c36e88;
+        }
+
+        section {
+            padding: 90px 10%;
+        }
+
+        .sobre {
+            background: #c87891;
+        }
+
+        .investigacion {
+            background: #b96681;
+            text-align: center;
+        }
+
+        .objetivos {
+            background: #d889a0;
+        }
+
+        .etiqueta {
+            font-size: 11px;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: clamp(30px, 5vw, 48px);
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .investigacion h2 {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .investigacion .subtitulo {
+            margin-top: 25px;
+            font-family: Georgia, serif;
+            font-size: 22px;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .tarjeta {
+            border: 1px solid rgba(255,255,255,0.7);
+            padding: 30px;
+            min-height: 230px;
+        }
+
+        .tarjeta h3 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .imagen {
+            min-height: 400px;
+            background: linear-gradient(rgba(120,45,70,0.25), rgba(120,45,70,0.25)),
+            url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1600");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .frase {
+            background: #ad5873;
+            text-align: center;
+            padding: 100px 10%;
+        }
+
+        .frase h2 {
+            line-height: 1.5;
+        }
+
+        .web {
+            background: #c87891;
+            text-align: center;
+        }
+
+        footer {
+            background: #984c66;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        footer p {
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 2.5;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="inicio">
+
+    <nav>
+        <div class="logo">TRABAJO SOCIAL</div>
+
+        <ul>
+            <li><a href="#proyecto">PROYECTO</a></li>
+            <li><a href="#investigacion">INVESTIGACIÓN</a></li>
+            <li><a href="#objetivos">OBJETIVOS</a></li>
+            <li><a href="#web">WEB</a></li>
+        </ul>
+    </nav>
+
+    <div class="portada">
+        <p>UNIVERSIDAD DE CÁDIZ · 2026/2027</p>
+
+        <h1>El papel del trabajador social en el acompañamiento a las familias con cáncer</h1>
+
+        <p>APOYO · ORIENTACIÓN · ACOMPAÑAMIENTO</p>
+
+        <a href="#proyecto" class="boton">DESCUBRIR EL PROYECTO</a>
+    </div>
+
+</header>
+
+<section class="sobre" id="proyecto">
+
+    <div class="etiqueta">01 — SOBRE EL PROYECTO</div>
+
+    <h2>Una mirada al acompañamiento familiar</h2>
+
+    <p>
+        Este proyecto analiza el impacto psicosocial del diagnóstico de cáncer pediátrico en el núcleo familiar y las funciones principales del trabajador social sanitario.
+        <br><br>
+        Se abordan aspectos como la intervención en situaciones de crisis, la orientación para acceder a recursos y ayudas socioeconómicas y el acompañamiento durante el tratamiento.
+        <br><br>
+        También destaca la importancia de la coordinación entre profesionales y entidades del tercer sector para ofrecer una atención integral y reducir la vulnerabilidad de las familias.
+    </p>
+
+</section>
+
+<section class="investigacion" id="investigacion">
+
+    <div class="etiqueta">02 — PREGUNTA DE INVESTIGACIÓN</div>
+
+    <h2>¿Cuál es el papel del trabajador social en el apoyo y acompañamiento a las familias de menores con cáncer durante el proceso de enfermedad?</h2>
+
+    <p class="subtitulo">Comprender para acompañar. Orientar para transformar.</p>
+
+</section>
+
+<section class="objetivos" id="objetivos">
+
+    <div class="etiqueta">03 — NUESTROS OBJETIVOS</div>
+
+    <h2>¿Qué queremos conseguir?</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>01</h3>
+            <p>Conocer las principales necesidades sociales y familiares que presentan las familias de menores con cáncer.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>02</h3>
+            <p>Analizar las funciones y la intervención del trabajador social en el acompañamiento y apoyo a estas familias.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>03</h3>
+            <p>Identificar los recursos y ayudas sociales que pueden facilitar la adaptación de las familias a la situación de enfermedad.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="imagen"></div>
+
+<section class="frase">
+
+    <div class="etiqueta">EL VALOR DEL TRABAJO SOCIAL</div>
+
+    <h2>
+        Eres el pilar profesional que transforma la vulnerabilidad en fortaleza, acompañando y orientando a las personas para garantizar sus derechos y su bienestar integral.
+    </h2>
+
+</section>
+
+<section class="web" id="web">
+
+    <div class="etiqueta">04 — DESCUBRE MÁS</div>
+
+    <h2>Conoce nuestro proyecto</h2>
+
+    <p>Accede a nuestra página web y descubre más sobre el acompañamiento social a las familias con cáncer.</p>
+
+    <a class="boton" href="https://mariamartinezara.github.io/proyecto-trabajo-social/" target="_blank">
+        VISITAR LA WEB
+    </a>
+
+</section>
+
+<footer>
+
+    <h2>TRABAJO SOCIAL</h2>
+
+    <p>UNIVERSIDAD DE CÁDIZ</p>
+    <p>INFORMÁTICA PARA EL TRABAJO SOCIAL</p>
+    <p>MARIA MARTINEZ ARANA</p>
+    <p>CURSO 2026/2027</p>
+
+</footer>
+
+</body>
+</html>
